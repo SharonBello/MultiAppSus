@@ -1,0 +1,44 @@
+:root {
+  /* --background: #3F4C6C;
+  --fonts: #F8FFFF;
+  --accent1: #F2A0C6;
+  --accent2: #79D0F2;
+  --accent3: #F2DA91;
+  --accent4: #F29580;
+  --accent6: rgb(101, 101, 101); */
+  
+  /* Color Palettes  */
+  --accent1: #FBF8CC;
+  --accent2: #FDE4CF;
+  --accent3: #FFCFD2;
+  --accent4: #F1C0E8;
+  --accent5: #CFBAF0;
+  --accent6: #A3C4F3;
+  --accent7: #90DBF4;
+  --accent8: #8EECF5;
+  --accent9: #98F5E1;
+  --accent10: #B9FBC0;
+  --accent11: #8EECF5;
+  --accent12: #F2F2F2;
+  --accent13: #D9D9D9;
+  --accent14: #8C8C8C;
+  --accent15: #262626;
+  --accent16: #0D0D0D;
+  --accent17: #7F7FB3;
+  
+  
+  /* Gmail-Colors */
+  --Gmail-background: #FFFFFFE6;
+  --Gmail-folder-hover: #DADCE0;
+  --Gmail-folder-active: #fbd4d0;
+  --Gmail-read-emails: #DADCE0;
+  --Gmail-subject-font: #202124;
+  --Gmail-body-font: #5F6368;
+  --Gmail-icon-fill: #5F6368;
+  
+  --linear-gradient: (90deg, rgba(165,197,147,1) 0%, rgba(242,218,145,1) 15%, rgba(242,149,128,1) 30%, rgba(248,255,255,1) 50%, rgba(242,160,198,1) 70%, rgba(131,134,189,1) 85%, rgba(121,208,242,1) 100%);
+
+  --secondary-clr-500: #A5C593;
+
+  --header: #07689F;
+}

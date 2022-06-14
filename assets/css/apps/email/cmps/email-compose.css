@@ -1,0 +1,253 @@
+.body {
+    min-height: 100vh !important;
+    background: white;
+    z-index: -5;
+}
+
+.backdrop-container {
+    width: 110%;
+    min-height: 70%;
+    border: 0;
+    box-shadow: 2px 2px 1em rgb(1 0 0 / .2);
+    position: fixed;
+    top: 5em;
+    left: -5em;
+    font-size: 1.2em;
+    margin: 0;
+    z-index: 5;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.compose-container {
+    display: grid;
+    grid-template-areas: "compose-header compose-header compose-header"
+    "compose-form compose-form compose-form"
+    "compose-footer-sent-actions compose-footer-sent-actions compose-footer-sent-actions";
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 0.5fr auto 0.5fr;
+    border-left: 2px solid var(--Gmail-folder-hover);
+    border: 2px solid var(--Gmail-folder-hover);
+    border-radius: 14px;
+    box-shadow: 2px 2px 10px rgba(155, 155, 155, 0.5);
+    overflow: hidden;
+}
+
+.compose-header {
+    grid-area: compose-header;
+    background: var(--Gmail-folder-hover);
+    color: var( --accent12);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--Gmail-body-font);
+    margin: 0;
+    padding: 1em;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.compose-form {
+    border-radius: 7px;
+    grid-area: compose-form;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    gap: 1em;
+    margin: 1em;
+}
+
+.compose-footer-sent-actions {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    grid-area: compose-footer-sent-actions;
+    background: var(--Gmail-folder-hover);
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    margin: 0;
+    padding: 1em;
+    align-items: center;
+    gap: 1em;
+    justify-content: flex-start;
+}
+
+h4 {
+    font-size: 1.3em;
+    padding: 0.5em;
+    margin: 0;
+}
+
+.compose-close-button {
+    border: 0;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1em;
+    float: right;
+    padding-top: 0.2em;
+    padding-right: 0.5em;
+    color: var(--Gmail-body-font);
+    background: none;
+}
+
+.compose-close-button:hover {
+    color: var( --accent5);
+}
+
+.to input,
+.subject input {
+    border: solid 1.5px var(--Gmail-subject-font);
+    border-radius: 7px;
+    background: none;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-right: 0.3em;
+    padding-left: 1em;
+    font-size: 0.7em;
+    color: var(--Gmail-subject-font);
+    width: 100%;
+}
+
+.compose-body  {   
+    border: none;
+    outline: none;
+    width: 60%;
+    border-radius: 7px;
+}
+
+textarea#body  { 
+    border: solid 1.5px var(--Gmail-subject-font);
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.2em;
+    padding-right: 0.2em;
+    padding-left: 1em;
+    resize: none;
+    outline: none;
+    overflow: hidden;
+    font-size: 1em;
+}
+
+.btn-send-to-note,
+.btn-save-draft,
+.btn-compose-delete,
+.go-back-email {
+    background: none;
+    color: var(--Gmail-icon-fill);
+    transition: all 0.2s;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    margin-left: 2em;
+}
+
+.btn-compose-delete{
+    background: none;
+    color: var(--Gmail-icon-fill);
+    transition: all 0.2s;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    margin-left: 28em;
+    position: relative;
+    float: right;
+}
+
+.btn-send-email{
+    color: var(--Gmail-icon-fill);
+    box-shadow: inset 2px 2px 3px rgba(155, 155, 155, 0.5);
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    border-radius: 7px;
+    width: 6em;
+    height: 3em;
+    margin: 0.5em;
+    border: none;
+    outline: none;
+}
+
+.btn-send-email:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.btn-compose-delete:hover{
+    color: red;
+    cursor: pointer;
+    animation: gradient 3s infinite;
+    transform: scale(1.25);
+}
+
+.btn-send-to-note:hover,
+.btn-save-draft:hover,
+.go-back-email:hover {
+    color: white ;
+    cursor: pointer;
+}
+
+.btn-send-email:active,
+.btn-send-to-note:active,
+.btn-save-draft:active,
+.btn-compose-delete:active {
+    animation: gradient 3s infinite;
+    transform: scale(1.5);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.btn-compose {
+    background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
+    background-size: 800% 400%;
+    padding: 1em 2em;
+    display: inline-block;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    transition: all .5s ease-in-out;
+    animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+    margin-top: 3em;
+    margin-bottom: 0.5em;
+    margin-right: 1.5em;
+    width: 8em;
+}
+
+.btn-compose:hover {
+    animation: gradient 3s infinite;
+    transform: scale(1.05);
+}
+
+.btn-compose:active {
+    animation: gradient 3s infinite;
+    transform: scale(0.8);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

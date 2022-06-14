@@ -1,0 +1,17 @@
+.book-list {
+    position: relative;
+    margin-right: 2em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 80%;
+    margin-left: 3em;
+}
+
+.book-list img {
+    max-width: 200px;
+}
+
+.book-list h5 {
+    margin-bottom: 5px;
+}

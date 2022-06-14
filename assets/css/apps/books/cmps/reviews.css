@@ -1,0 +1,10 @@
+.review-card{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    padding: 15px;
+    gap: 20px;
+    border: 1px solid grey;
+}
+

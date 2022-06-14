@@ -1,0 +1,82 @@
+.book-details { 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.353);
+    min-width: 50%;
+    margin: auto;
+    padding: 25px;
+}
+
+.book-details img {
+    max-width: 200px;
+}
+
+.book-details .img-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.book-details h3 {
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.book-details h4 {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.book-details h5 {
+    border-top: 1px solid rgba(67, 65, 65, 0.518);
+    margin-bottom: 10px;
+    margin-top: 10px;    padding: 5px;
+    font-weight: 500;
+}
+
+.book-details p {
+    border-top: 1px solid rgba(67, 65, 65, 0.518);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.book-details .user-btn {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+.book-details .user-btn button {
+    font-family: inherit;
+    font-size: 20px;
+    background: var(--Gmail-subject-font);
+    color: var(--Gmail-background);
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    border-radius: 16px;
+    transition: all 0.2s;
+    width: 8em;
+    margin: 0.5em;
+}
+
+.book-details .user-btn button:hover{
+    color: var( --accent5);
+    animation: gradient 3s infinite;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.book-details .user-btn .delete-btn {
+    background-color: rgb(206, 97, 97);
+}
+
+.book-details .sale {
+    background-color: lightcoral;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}

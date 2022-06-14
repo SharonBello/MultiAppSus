@@ -1,0 +1,80 @@
+.folders {
+    font-size: 1.2em;
+    line-height: 2.3em;
+    margin: 0;
+    margin-top: 1em;
+    width: 100%;
+}
+
+.inbox,
+.starred,
+.sent,
+.drafts,
+.important,
+.folder-bin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 5em;
+}
+
+.inbox span {
+    margin-left: 4em;
+    font-size: 0.8em;
+    color: var(--accent14);
+    margin-top: 0.15em;
+}
+
+.starred span,
+.sent span,
+.drafts span,
+.important span,
+.folder-bin span {
+    margin-left: 4em;
+    font-size: 0.8em;
+    color: var(--accent14);
+    margin-top: 0.15em;
+    opacity: 0;
+}
+
+.fa-solid {
+    align-items: flex-start;
+    padding: 0;
+    margin-right: 0.4em;
+    color: var(--Gmail-icon-fill);
+    font-size: 0.85em;
+}
+
+.fa-solid.fa-inbox {
+    line-height: -2em;
+    margin-bottom: 0;
+}
+
+.inbox:hover,
+.starred:hover,
+.sent:hover,
+.drafts:hover,
+.important:hover,
+.folder-bin:hover {
+    background-color: var(--Gmail-folder-hover);
+    position: relative;
+    cursor: pointer;
+    border-top-right-radius: 250px;
+    border-bottom-right-radius: 250px;
+}
+
+.inbox:hover::before,
+.starred:hover::before,
+.sent:hover::before,
+.drafts:hover::before,
+.important:hover::before,
+.folder-bin:hover::before {
+    content: '';
+    background-color: var(--Gmail-folder-hover);
+    width: 5em;
+    height: 2.35em;
+    position: absolute;
+    left: -5em;
+    /* margin-left: auto -100px; */
+}

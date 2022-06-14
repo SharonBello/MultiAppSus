@@ -1,0 +1,89 @@
+.header {
+  background-color: #07689F;
+}
+
+.header-container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 6em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 1;
+  gap: 2em;
+}
+
+.logo-container {
+  min-width: 12em;
+  height: 6em;
+  position: relative;
+}
+
+.logo-img {
+  margin-top: 0.7em;
+  width: 4.5em;
+  margin-left: 4em;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  height: 5em;
+  position: relative;
+  cursor: pointer;
+  margin-right: 2em;
+  margin-left: auto;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 1.2em;
+}
+
+ul.nav-bar a {
+  text-align: center;
+  color: var(--accent12);
+  padding: 0;
+}
+
+.nav-bar a:hover {
+  color: var(--accent5);
+}
+
+.nav-bar.nav-link-home a:active,
+.nav-bar.nav-link-email a:active,
+.nav-bar.nav-link-notes a:active,
+.nav-bar.nav-link-books a:active,
+.nav-bar.nav-link-about a:active {
+  color: var(--accent1);
+}
+
+.search-form-container {
+  height: 100%;
+  width: 20em;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-left: 1em;
+  padding: 0;
+}
+
+.search-form {
+  outline: none;
+  border: none;
+}
+
+.search-form input {
+  width: 18em;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  padding: 0.3em;
+  padding-left: 0.5em;
+  cursor: text;
+  font-size: 0.9em;
+  letter-spacing: 0.05em;
+}

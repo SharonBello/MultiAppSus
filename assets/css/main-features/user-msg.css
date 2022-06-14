@@ -1,0 +1,17 @@
+.user-msg {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 20px;
+    border: 1px solid #959595;
+    background: white;
+    color: white;
+}
+
+.user-msg.success {
+    background: #07689F;
+}
+
+.user-msg.danger {
+    background: #AC2020;
+}

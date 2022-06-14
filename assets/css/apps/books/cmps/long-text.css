@@ -1,0 +1,6 @@
+.long-text .show-btn {
+    border: none;
+    color: rgb(100, 159, 196);
+    background-color: inherit;
+    cursor: pointer;
+}

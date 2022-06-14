@@ -1,0 +1,132 @@
+.note-add-form {
+    position: relative;
+    max-width: 600px;
+    margin: 32px auto 50px auto;
+    background: #fff;
+    padding: 7px;
+    border-radius: 7px;
+    box-shadow: 0 1px 7px rgb(104, 103, 103);
+}
+
+.note-add-form input {
+    width: 100%;
+    border: none;
+    padding: 4px 10px;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 1rem;
+    resize: none;
+}
+
+.note-add-form textarea {
+    width: 100%;
+    border: none;
+    padding: 4px 10px;
+    outline: none;
+    font-size: 1rem;
+    resize: none;
+    height: auto;
+}
+
+.note-wraper {
+    margin: unset;
+}
+
+.action-img {
+    width: 16px;
+    margin-right: 2px;
+    border: unset;
+    color: var(--primary-clr-600);
+    background-color: unset;
+}
+
+.note-img-select {
+    margin-right: 0;
+    margin-left: 7px;
+}
+
+.color-picker {
+    background: #fff;
+    border: none;
+    padding: 4px 4px;
+    outline: none;
+    font-size: 1rem;
+    resize: none;
+    display: none;
+    gap: 20px;
+}
+
+.color-picker-display {
+    display: flex;
+}
+
+.item-color {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+}
+
+.img-input {
+    height: 1px;
+    width: 1px;
+    color: rgba(0, 0, 0, 0);
+    visibility: hidden;
+}
+
+.label-for-img {
+    margin: 0;
+    padding: 0;
+    width: unset;
+    height: unset;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 90px;
+    background-color: var(--Gmail-folder-hover);
+    color: var(--header);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    left: 105%;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    font-size: 12px;
+    font-family: lato;
+}
+
+@media (max-width: 850px) {
+    .note-add-form {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 730px) {
+    .note-add-form {
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 660px) {
+    .note-add-form {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    .note-add-form {
+        max-width: 200px;
+    }
+}

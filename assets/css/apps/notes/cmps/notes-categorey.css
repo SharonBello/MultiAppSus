@@ -1,0 +1,19 @@
+/* .notes-category {
+    max-width: 200px;
+    font-size: 1.2em;
+    line-height: 2em;
+    font-weight: bold;
+} */
+
+.note-card-quantity {
+    cursor: pointer;
+    font-size: 14px;
+    font-family: lato;
+}
+
+.notes-quantity {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 5px;
+}

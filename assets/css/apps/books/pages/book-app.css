@@ -1,0 +1,74 @@
+.book-app {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    height: 35em;
+    width: 100%;
+    margin: 0;
+}
+
+.book-filter{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-top: 2px solid var(--accent13);
+    padding-top: 1.5em;
+}
+
+.add-book {
+    background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
+    background-size: 800% 400%;
+    padding: 0.5em 1.5em;
+    display: inline-block;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    transition: all .5s ease-in-out;
+    animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    width: 8em;
+}
+
+.filter-books{
+    background: var(--accent14);
+    background-size: 800% 400%;
+    padding: 0.5em 1.5em;
+    display: inline-block;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    width: 8em;
+}
+
+.add-book:hover {
+    animation: gradient 3s infinite;
+    transform: scale(1.05);
+}
+
+.add-book:active {
+    animation: gradient 3s infinite;
+    transform: scale(0.8);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}

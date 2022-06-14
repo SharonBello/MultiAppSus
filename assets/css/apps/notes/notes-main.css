@@ -1,0 +1,9 @@
+/* pages */
+@import './pages/notes-modal.css';
+
+/* cmps */
+@import './cmps/notes-list.css';
+@import './cmps/notes-add.css';
+@import './cmps/notes-preview.css';
+@import './cmps/notes-index.css';
+@import './cmps/notes-categorey.css';

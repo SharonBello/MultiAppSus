@@ -1,0 +1,35 @@
+.container-sides-note {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.note-app-left-side {    
+    margin: 20px 0 50px 20px;
+    max-width: 200px;
+    font-size: 1.2em;
+    line-height: 2em;
+    font-weight: bold;
+}
+
+.note-app-right-side {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 860px) {
+    .note-app-left-side {
+        max-width: 180px;
+        font-size: 10px;
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 540px) {
+    .note-app-left-side {
+        max-width: 120px;
+        /* font-size: 8px; */
+        margin-left: 10px;
+    }
+}

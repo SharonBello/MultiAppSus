@@ -1,0 +1,21 @@
+.user-msg {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    background: white;
+    display: none;
+}
+
+.user-msg.shown {
+    display: block;
+}
+
+.user-msg.success {
+    background: lightgreen;
+}
+
+.user-msg.danger {
+    background: rgb(242, 121, 121);
+}

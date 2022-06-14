@@ -1,0 +1,77 @@
+.modal {
+    padding: 3em;
+    max-width: 20%;
+    max-height: 20%;
+    border: 0;
+    box-shadow: 5px 5px 1em rgb(0 0 0 / .3);
+    text-align: center;
+    line-height: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    flex: 1;
+}
+
+.modal::backdrop {
+    background: rgb(0 0 0 / 0.4);
+}
+
+h1 {
+    font-size: 3em;
+    padding: 1em;
+    margin: 1em;
+}
+
+.modal p {
+    font-size: 1.5em;
+    padding: 1em;
+    margin: 1em;
+
+}
+
+.close-button {
+    font-size: 2em;
+    border: 0;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: 1em;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+form, input {
+    font-size: 1.2em;
+}
+
+.submit {
+    position: relative;
+    margin-top: 1em;
+    width: 100%;
+}
+
+.button-submit {
+    padding: 0.5em;
+    color: var(--primary-clr-500);
+    border-radius: 6em;
+    border: 2px solid var(--primary-clr-500);
+    cursor: pointer;
+    font-size: 1em;
+    width: 15em;
+    transition: padding .4s;
+  }
+  
+  .button-submit:hover {
+    color: var(--secondary-clr-500);
+    border: 2px solid var(--secondary-clr-500);
+    padding-inline-end: 2.5em;
+  }
+  
+  .button-submit:hover::after {
+    content: ' →';
+    position: absolute;
+  }
+  

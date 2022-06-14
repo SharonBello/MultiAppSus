@@ -1,0 +1,24 @@
+.home-img-container {
+display: flex;
+flex-direction: column;
+margin-bottom: 200px;
+}
+
+.home-pages-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img {
+    width: 200px;
+}
+
+.home-user-name {
+    text-align: center;
+}
+
+.home-img-email {
+    margin-right: 20px;
+}

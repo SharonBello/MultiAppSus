@@ -1,0 +1,117 @@
+.note-modal {
+    background: #fff;
+    width: 240px;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px rgb(175, 175, 175);
+    padding: 10px;
+    float: left;
+    overflow: hidden;
+    line-height: 1.25rem;
+}
+
+.note-modal h1 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.note-modal .note-txt-body {
+    font-size: 14px;
+    font-family: lato;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+}
+
+.note-img {
+    width: 100%;
+}
+
+.todos-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.strikeClass {
+    text-decoration: line-through;
+}
+
+.todo-line {
+    display: flex;
+    flex-direction: row;
+}
+
+.note-preview {
+    position: relative;
+    margin: 10px;
+    padding-bottom: 0;
+    break-inside: avoid-column;
+}
+
+.note-title {
+    margin: 10px 0;
+}
+
+.note-bottom-btn-container {
+    position: absolute;
+    margin-top: 10px;
+    bottom: 0;
+}
+
+
+@media (max-width: 1260px) {
+    .note-modal {
+        width: 200px;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 880px) {
+    .note-modal {
+        width: 260px;
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .note-txt-body {
+        font-size: 12px;
+        margin-bottom: 50px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .note-modal {
+        width: 230px;
+        
+    }
+
+}
+
+@media (max-width: 720px) {
+    .note-modal {
+        width: 210px;
+        
+    }
+}
+
+@media (max-width: 690px) {
+    .note-modal {
+        width: 180px;
+        gap: 5px;
+    }
+
+    .note-txt-body {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 540px) {
+    .note-modal {
+        width: 240px;
+        gap: 10px;
+    }
+
+}

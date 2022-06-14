@@ -1,0 +1,19 @@
+/* .note-list {
+    flex-flow: column wrap;
+    align-content: space-between;
+    flex-direction: row; 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    max-height:fit-content;
+    row-gap: 20px;
+    max-width: 100%;    
+} */
+
+.note-list {
+    /* width: 80%; */
+    column-width: 240px;
+    column-count: auto;
+    gap: 1px;
+    margin: 0 auto;
+    margin-top: 40px;
+}

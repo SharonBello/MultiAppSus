@@ -1,0 +1,33 @@
+.main-content-container{
+    flex: 1;
+}
+
+.email-index {
+    display: flex;
+    flex-direction: row;
+    justify-items: space-around;
+    /* align-items: center; */
+}
+
+.left-side {
+    margin-left: 2em;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    /* gap: 1em;     */
+    width: 14em;
+    border-right: 2px solid var(--accent13);
+    /* margin-top: 1em; */
+}
+
+.right-side {
+    margin-top: 3em;
+    border-top: 1px solid rgb(202, 202, 202);
+
+    margin-right: 2em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+}
+
